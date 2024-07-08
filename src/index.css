@@ -1,0 +1,472 @@
+
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* list-style: none; */
+  /* outline: none; border: none; */
+  text-decoration: none;
+  scroll-behavior: smooth;
+  /* text-transform: capitalize;
+  transition: .2s linear; */
+}
+
+:root{
+  --bg-color: #fff;
+  --main-color: #e55472;
+  --text-color: #010101;
+  --2nd-color: #434343;
+  --other-color: #666666;
+  --big-font: 5rem;
+  --h2-font: 2.3rem;
+  --p-font: 1.3rem;
+}
+
+body{
+  color: var(--text-color);
+  background: rgb(12, 14, 18);
+
+}
+
+header {
+  background-color: rgb(20, 56, 81);
+  color: #ccc;
+  text-align: center;
+  position: fixed;
+  padding: 20px 14%;
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .50s ease;
+}
+
+main {
+  flex: 5;
+  padding: 20px;
+  max-width: 800px;
+  margin: 200px auto 0; /* add margin-top to push main down */
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.h-icons{
+  display: flex;
+  align-items: center;
+}
+
+.h-icons i{
+  font-size: 25px;
+  color: white;
+  margin-left: 5px;
+  margin-right: 20px;
+  transition: all .50s ease;
+}
+
+.h-icons i:hover{
+  transform: translateY(-4px);
+  color: white;
+}
+
+#menu-icon{
+  height: 30px;
+  width: 30px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 100001;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2.5rem;
+  background: #272829;
+}
+
+.contact-box h4{
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  color: var(--bg-color);
+}
+
+.contact-box li{
+  margin-bottom: 18px;
+}
+
+.contact-box li a{
+  display: block;
+  color: #999999;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+
+.contact-box li a:hover{
+  transform: translateX(-7px);
+  color: var(--main-color);
+}
+
+.contact-box h5{
+  font-size: 16px;
+  font-weight: 600;
+  color: #999999;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.container {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+margin: 120px auto 0;
+}
+
+.searchWord {
+  background-color: rgb(20, 56, 81);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  width: 100%; /* Initially full width */
+  max-width: 800px; /* Maximum width when expanded */
+  margin: 0 auto; /* Center align */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+.searchWord input, .searchWord select, .searchWord button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.searchWord button {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.searchWord button:hover {
+  background-color: gold;
+}
+
+.wordOfDaySection {
+  background-color: rgb(20, 56, 81);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  width: 100%; /* Initially full width */
+  max-width: 800px; /* Maximum width when expanded */
+  margin: 0 auto; /* Center align */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Add these styles for the entryContainer */
+#entryContainer {
+  display: none; /* Hide the container by default */
+  margin-top: 20px;
+  padding: 20px;
+  background-color: beige;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+  max-width: 800%; /* Make sure the container doesn't exceed the available width */
+}
+
+#entryContainer.visible {
+  display: flex; /* Make the container visible when it has the 'visible' class */
+}
+
+#entryContainer button {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#entryContainer button:hover {
+  background-color: gold;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Style for the word information section */
+.word-info {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#phonetic {
+  font-style: italic;
+}
+
+/* Style for the meanings section */
+.meanings {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meanings h3, .meanings h4 {
+  margin: 5px 0;
+}
+
+.meanings p {
+  margin: 5px 0;
+}
+
+/* Add media queries to handle different screen sizes */
+@media (max-width: 768px) {
+  .searchWord {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchWord input, .searchWord select, .searchWord button {
+    width: 800%;
+  }
+}
+
+#button {
+  background-color: rgb(20, 56, 81); /* Green background */
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Center-align text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline block */
+  font-size: 16px; /* Font size */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Cursor pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the button */
+#button:hover {
+  background-color: gold; /* Darker green */
+}
+
+#favoritesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(20, 56, 81);
+}
+
+.favorite-word {
+  background-color: #f9f9f9;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-word p {
+  margin: 0;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.favorite-word button {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.favorite-word button:hover {
+  background-color: #ff3333;
+}
+
+#addButton {
+  background-color: gold;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addButton:hover {
+  background-color: goldenrod;
+}
+
+#edit {
+  background-color: rgb(91, 192, 69);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#edit:hover {
+  background-color:  rgb(76, 164, 56);
+}
+
+#save {
+  background-color: gold;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#save:hover {
+  background-color: goldenrod;
+}

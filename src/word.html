@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Book</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+  <body>
+    <header>
+        <!-- Side navigation menu -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="word.html">Dictionary</a>
+        <a href="saved.html">Saved Words</a>
+        <a href="games.html">Games</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <!-- Menu icon to open the side navigation -->
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <!-- Logo linking to the home page -->
+      <a href="index.html">
+          <img src="logo.png" width="250" height="100">
+      </a>
+
+      <!-- Header icons for bookmark and user profile -->
+      <div class="h-icons">
+          <a href="saved.html"><i class='bx bx-bookmark'></i></a>
+          <a href="#"><i class='bx bx-user'></i></a> <!-- profile -->
+
+      </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+      <section class="searchWord">
+        <!-- Input field for searching a word -->
+        <input type="text" id="word" placeholder="Search Word">
+
+        <!-- Dropdown for selecting word type -->
+        <select id="type">
+            <option value="">All</option>
+            <option value="noun">Noun</option>
+            <option value="adjective">Adjective</option>
+            <option value="verb">Verb</option>
+            <option value="adverb">Adverb</option>
+        </select>
+
+        <!-- Button to trigger the search -->
+        <button onclick="searchWord()">Search</button>
+
+        <!-- Container to display search results -->
+        <div id="entryContainer" class="hidden"></div>
+      </section>
+
+    </main>
+    
+    <!-- Link to the main JavaScript file -->
+    <script src="main.js"></script>
+  </body>
+</html>

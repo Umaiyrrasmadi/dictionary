@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Book</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Dictionary</a>
+            <a href="saved.html">Saved Words</a>
+            <a href="games.html">Games</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <a href="index.html">
+            <img src="logo.png" width="250" height="100">
+        </a>
+
+        <div class="h-icons">
+            <a href="#"><i class='bx bx-bookmark'></i></a>
+            <a href="#"><i class='bx bx-user'></i></a>
+  
+
+        </div>
+    </header>
+
+    <h3>Contact Form</h3>
+
+    <div class="container">
+    <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+        <option value="malaysia">Malaysia</option>
+        <option value="singapore">Singapore</option>
+        <option value="korea">Korea</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <a href="index.html"><input type="submit" value="Submit"></a>
+        </a>
+    </form>
+    </div>
+
+    <!-- custom js link -->
+    <script src="main.js"></script>
+    
+</body>
+</html>

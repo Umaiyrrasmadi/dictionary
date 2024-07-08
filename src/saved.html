@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Word</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body onload="displayFavorites()">
+    <header>
+        <!-- Side navigation menu -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="index.html">Dictionary</a>
+            <a href="saved.html">Saved Words</a>
+            <a href="games.html">Games</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Menu icon to open the side navigation -->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+        <!-- Logo linking to the home page -->
+        <a href="index.html">
+            <img src="logo.png" width="250" height="100">
+        </a>
+
+        <!-- Header icons for bookmark and user profile -->
+        <div class="h-icons">
+            <a href="saved.html"><i class='bx bx-bookmark'></i></a>
+            <a href="#"><i class='bx bx-user'></i></a>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <center>
+            <h1 style="color: whitesmoke;">Saved Words</h1>
+            <br>
+            <!-- Button to add new words -->
+            <a href="word.html"><button id="addButton">ADD</button></a>
+        </center>
+        <!-- Container to display saved favorite words -->
+        <section id="favoritesContainer">
+            <!-- Favorite words will be displayed here -->
+        </section>
+    </main>
+
+    <!-- Link to the main JavaScript file -->
+    <script src="main.js"></script>
+</body>
+</html>
